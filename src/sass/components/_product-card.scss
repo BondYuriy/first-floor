@@ -1,0 +1,162 @@
+/*=== product-card ===*/
+
+.product-card {
+  height: 440px;
+  border-radius: 10px;
+  background-color: $white;
+  padding: 17px;
+  overflow: hidden;
+
+  & .img-box {
+    display: block;
+    height: 230px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+
+    & img {
+      display: block;
+      width: 100%;
+      min-height: 100%;
+      border-radius: 10px;
+    }
+
+    & .title {
+      display: block;
+      text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+      color: $white-text;
+      font-size: 13px;
+      font-weight: $Bold;
+      line-height: 20px;
+      text-transform: uppercase;
+      position: absolute;
+      left: 17px;
+      bottom: 11px;
+    }
+
+    & .stickers-box {
+      position: absolute;
+      top: 6px;
+      left: 10px;
+
+      & .stickers {
+        margin-right: 6px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  & .manufacturer {
+    font-size: 13px;
+    line-height: 17px;
+    margin: 20px 0 0 0;
+    height: 34px;
+    overflow: hidden;
+    margin-bottom: 5px;
+    color: $title-color;
+
+    & a {
+      color: $title-color;
+      font-size: 12px;
+      font-weight: 500;
+      margin-left: 5px;
+
+      &:hover {
+        color: $hover-color;
+      }
+    }
+  }
+
+  & .application {
+    line-height: 17px;
+    height: 52px;
+    overflow: hidden;
+
+    & strong {
+      color: $title-color;
+      margin-right: 5px;
+    }
+  }
+
+  & .product-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 17px;
+    left: 17px;
+    right: 17px;
+
+    & .btn-box {
+      width: 160px;
+      height: 38px;
+      border-radius: 20px;
+      background-color: rgba(170, 192, 195, 0.14);
+
+      & .btn {
+        margin-right: 8px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      & .btn-compare {
+        & svg {
+          display: block;
+          width: 22px;
+          height: 20px;
+          fill: #aac0c3;
+        }
+
+        &:hover {
+          & svg {
+            fill: $blue-color;
+          }
+        }
+      }
+    }
+
+    & .price-box {
+      text-align: center;
+
+      & .old-price {
+        display: block;
+        height: 18px;
+        border-radius: 10px;
+        background-color: #f3f7f7;
+        color: #aac0c3;
+        font-size: 11px;
+        font-weight: $Bold;
+        line-height: 18px;
+        text-decoration: line-through;
+        margin-bottom: 5px;
+      }
+
+      & .price {
+        margin: 0;
+        color: $title-color;
+        font-size: 13px;
+        font-weight: $Medium;
+        line-height: 17px;
+
+        & strong {
+          display: block;
+          color: $blue-color;
+          font-size: 17px;
+          font-weight: $Bold;
+        }
+
+        & .sale {
+          color: #fa642d;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,369 @@
+.header {
+  // position: fixed;
+  // left: 0;
+  // right: 0;
+  position: relative;
+  z-index: 10;
+  // background-color: rgba(255, 255, 255, 1);
+}
+
+.header-main-wrapper {
+  margin-bottom: 16px;
+
+  & .header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 114px;
+
+    & .contact-box {
+      display: flex;
+      align-items: center;
+
+      & .phone-numbers {
+        margin-right: 33px;
+
+        & li {
+          display: flex;
+          align-items: center;
+          padding-left: 14px;
+
+          & .phone-icon {
+            display: flex;
+            align-items: center;
+            color: $blue-color;
+            font-size: 12px;
+            font-weight: $Bold;
+            line-height: 22px;
+
+            &::after {
+              display: block;
+              content: "";
+              width: 4px;
+              height: 4px;
+              border-radius: 50%;
+              background-color: $blue-color;
+              margin-left: 3px;
+            }
+          }
+
+          & .call-back {
+            color: $blue-color;
+            font-size: 10px;
+            font-weight: 300;
+            line-height: 18px;
+            text-decoration: underline;
+            margin-left: 6px;
+
+            &:hover {
+              color: $hover-color;
+            }
+          }
+        }
+
+        & .phone-number-main {
+          padding: 0;
+
+          & a {
+            display: flex;
+            align-items: center;
+
+            & .phone-icon strong {
+              font-weight: $Bold;
+              font-size: 20px;
+            }
+
+            & .number {
+              color: #1f1f1f;
+              font-weight: $Regular;
+              font-size: 20px;
+              letter-spacing: 1.34px;
+              line-height: 22px;
+              margin-left: 5px;
+            }
+          }
+
+          &:hover {
+            & a .number {
+              color: $hover-color;
+            }
+          }
+        }
+      }
+
+      & .location {
+        display: flex;
+        align-items: center;
+
+        & .location-icon {
+          height: 30px;
+
+          & svg {
+            display: block;
+            height: 100%;
+            width: 40px;
+            fill: $blue-color;
+          }
+        }
+
+        & .location-info {
+          & span {
+            display: block;
+            color: $title-color;
+            font-size: 10px;
+            font-weight: 300;
+            line-height: 18px;
+          }
+
+          & a {
+            color: $blue-color;
+            font-size: 10px;
+            font-weight: 300;
+            line-height: 18px;
+            text-decoration: underline;
+
+            &:hover {
+              color: $hover-color;
+            }
+          }
+        }
+      }
+    }
+
+    & .logo {
+      flex: 0 0 210px;
+
+      & a {
+        display: block;
+
+        & img {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    & .user-options {
+      display: flex;
+      align-items: center;
+
+      & .search {
+        height: 30px;
+        margin-right: 32px;
+
+        & input[type="text"] {
+          display: none;
+        }
+
+        & .btn-search {
+          padding: 0;
+          border: 0;
+          border-radius: 0;
+          background-color: #fff;
+          width: 30px;
+          height: 30px;
+          cursor: pointer;
+
+          &:focus {
+            outline: none;
+          }
+
+          & svg {
+            display: block;
+            height: 100%;
+            width: 100%;
+            fill: $blue-color;
+          }
+
+          &:hover svg {
+            fill: $hover-color;
+          }
+        }
+      }
+
+      & .comparison {
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin-right: 32px;
+
+        & svg {
+          display: block;
+          height: 100%;
+          width: 100%;
+          fill: $blue-color;
+        }
+
+        &:hover svg {
+          fill: $hover-color;
+        }
+      }
+
+      & .basket {
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        width: auto;
+        background-color: rgba(255, 255, 255, 0);
+        display: flex;
+        align-items: center;
+        height: 30px;
+        cursor: pointer;
+
+        &:focus {
+          outline: none;
+        }
+
+        & .img-box {
+          width: 30px;
+          height: 30px;
+          position: relative;
+          margin-right: 32px;
+
+          & svg {
+            display: block;
+            height: 100%;
+            width: 100%;
+            fill: $blue-color;
+          }
+
+          &:hover svg {
+            fill: $hover-color;
+          }
+
+          & .number-goods {
+            color: #1f1f1f;
+            font-size: 11px;
+            font-weight: $Bold;
+            line-height: 22px;
+            position: absolute;
+            right: 1px;
+            top: 3px;
+          }
+        }
+
+        & .basket-info {
+          & .title {
+            display: block;
+            color: #3c3c3c;
+            font-size: 12px;
+            font-weight: $Regular;
+          }
+
+          & .total-amount {
+            display: block;
+            color: $blue-color;
+            font-size: 13px;
+            font-weight: $Bold;
+            line-height: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.navigations-wrapper {
+  & .subnav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    background-color: #f8f8f8;
+
+    & .nav-item-desc {
+      margin-right: 45px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      & a {
+        display: block;
+        color: $title-color;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 36px;
+
+        &:hover {
+          color: $hover-color;
+        }
+      }
+    }
+  }
+
+  & .navigations {
+    height: 135px;
+    display: flex;
+    align-content: center;
+
+    & .navbar {
+      width: 100%;
+      padding: 0;
+      background-color: $white;
+
+      & .navbar-collapse .navbar-nav {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+
+        & .nav-item {
+          flex: 0 0 11%;
+
+          & .nav-link {
+            padding: 0;
+            color: #505050;
+            font-size: 12px;
+            font-weight: $Bold;
+            line-height: 17px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &:hover {
+              color: $hover-color;
+            }
+
+            & img {
+              display: block;
+              width: auto;
+              height: 50px;
+              margin-bottom: 18px;
+            }
+
+            & span {
+              display: block;
+              line-height: 20px;
+              transition: 0s;
+              text-align: center;
+            }
+          }
+
+          & .active {
+            outline: none;
+            position: relative;
+
+            & span {
+              color: $yellow-color;
+            }
+
+            &:hover {
+              color: #3c3c3c;
+            }
+          }
+
+          & .hot {
+            color: $red-color;
+          }
+
+          & .btn {
+            display: block;
+            padding: 11px 0;
+          }
+        }
+      }
+    }
+  }
+}

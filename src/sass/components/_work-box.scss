@@ -1,0 +1,136 @@
+/*=== work-box ===*/
+.work-box {
+  padding: 500px 0 43px 0;
+  display: flex;
+  justify-content: space-between;
+
+  & .work-info {
+    color: $white-text;
+    font-size: 14px;
+    font-weight: $Bold;
+    line-height: 40px;
+    position: absolute;
+    left: 20px;
+    bottom: 15px;
+    z-index: 2;
+
+    &::before {
+      display: inline-block;
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: $blue-color;
+      margin-right: 7px;
+    }
+  }
+
+  & .work-main {
+    flex: 0 0 41%;
+
+    & .work-main-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 10px;
+      margin-bottom: 15px;
+
+      & .title-section {
+        padding: 0;
+      }
+    }
+
+    & .work-img {
+      height: 304px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      overflow: hidden;
+      position: relative;
+
+      &::before {
+        display: block;
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(60, 60, 60, 0.77);
+      }
+
+      & img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  & .work-item1 {
+    flex: 0 0 32%;
+    overflow: hidden;
+
+    & .work-img {
+      height: 175px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      position: relative;
+      margin-bottom: 19px;
+      overflow: hidden;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &::before {
+        display: block;
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(60, 60, 60, 0.77);
+      }
+
+      & img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  & .work-item2 {
+    flex: 0 0 24%;
+    overflow: hidden;
+
+    & .work-img {
+      height: 369px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      overflow: hidden;
+      position: relative;
+
+      &::before {
+        display: block;
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(60, 60, 60, 0.77);
+      }
+
+      // & img {
+      //   display: block;
+      //   width: 100%;
+      //   height: auto;
+      // }
+    }
+  }
+}

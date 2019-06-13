@@ -1,0 +1,88 @@
+/*=== home-carousel ===*/
+
+.home-carousel {
+  padding: 114px 0 0 0;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+
+  & .item {
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+
+    &::before {
+      display: block;
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: rgba(24, 99, 141, 0.7);
+      z-index: 0;
+    }
+
+    & img {
+      display: block;
+      min-height: 100%;
+      width: 100%;
+    }
+
+    & .item-info-box {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      padding: 292px;
+
+      & .item-info {
+        & .title {
+          color: $blue-color;
+          font-size: 26px;
+          font-weight: $Bold;
+          line-height: 40px;
+          text-transform: uppercase;
+        }
+
+        & .text {
+          display: block;
+          color: $white-text;
+          font-size: 20px;
+          font-weight: $Medium;
+          line-height: 40px;
+          text-transform: uppercase;
+          margin-bottom: 15px;
+        }
+
+        & .btn {
+          display: block;
+        }
+      }
+    }
+  }
+
+  & .owl-dots {
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(540px, 0%);
+
+    & .owl-dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.37);
+      margin-bottom: 8px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    & .active {
+      background-color: rgba(255, 255, 255, 1);
+    }
+  }
+}

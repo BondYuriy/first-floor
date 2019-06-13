@@ -1,0 +1,42 @@
+/*=== options-carousel ===*/
+
+.option-carousel {
+  & .owl-nav {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: -80px;
+
+    & .owl-prev,
+    .owl-next {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: #aac0c3;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      &:active {
+        opacity: 1;
+      }
+    }
+
+    & .owl-prev {
+      margin-right: 10px;
+      background-image: url("../img/left-arrow.svg");
+    }
+
+    & .owl-next {
+      background-image: url("../img/right-arrow.svg");
+    }
+  }
+}
+
+.btn-catalogy {
+  margin-top: 33px;
+}

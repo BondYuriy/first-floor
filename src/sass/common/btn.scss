@@ -1,0 +1,118 @@
+/*=== btn style ===*/
+
+.btn {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.btn-blue-transparent {
+  display: inline-block;
+  width: 168px;
+  height: 40px;
+  border-radius: 30px;
+  border: 1px solid #7196ac;
+  color: $white-text;
+  font-size: 11px;
+  font-weight: $Bold;
+  line-height: 38px;
+
+  &:hover {
+    background-color: #7196ac;
+    color: $white-text;
+  }
+}
+
+.btn-blue {
+  height: 36px;
+  border-radius: 30px;
+  background-color: $blue-color;
+  color: $white-text;
+  font-size: 11px;
+  font-weight: $Bold;
+  line-height: 36px;
+  padding: 0 11px;
+
+  &:hover {
+    opacity: 0.8;
+    color: $white-text;
+  }
+}
+
+.btn-blue-small {
+  padding: 0 10px;
+  height: 26px;
+  border-radius: 30px;
+  background-color: $blue-color;
+  color: $white-text;
+  font-size: 11px;
+  font-weight: $Bold;
+  line-height: 26px;
+
+  &:hover {
+    opacity: 0.8;
+    color: $white-text;
+  }
+}
+
+.btn-blue-light {
+  height: 38px;
+  border-radius: 20px;
+  background-color: #f3f7f7;
+  color: #1f1f1f;
+  font-size: 13px;
+  font-weight: $Medium;
+  line-height: 38px;
+  padding: 0 20px;
+
+  &:hover {
+    background-color: #dff3f3;
+  }
+}
+
+.btn-yellow {
+  width: 112px;
+  height: 38px;
+  border-radius: 20px;
+  background-color: $yellow-color;
+  color: #1f1f1f;
+  font-size: 13px;
+  font-weight: $Medium;
+  line-height: 38px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.stickers {
+  display: inline-block;
+  height: 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 15px;
+  font-size: 9px;
+  font-weight: $Bold;
+  line-height: 20px;
+  padding: 0 10px;
+  text-transform: uppercase;
+}
+
+.sticker-yellow {
+  background-color: $yellow-color;
+  color: #1f1f1f;
+}
+
+.sticker-lime {
+  background-color: #afce46;
+  color: $white-text;
+}
+
+.sticker-red {
+  background-color: #fa642d;
+  color: $white-text;
+}

@@ -1,0 +1,20 @@
+/*=== title-section ===*/
+
+.title-section {
+  padding: 40px 0;
+
+  & .title {
+    color: $blue-color;
+    font-size: 19px;
+    font-weight: $Bold;
+    line-height: 28px;
+    text-transform: uppercase;
+  }
+
+  & .text {
+    color: #909090;
+    font-size: 13px;
+    line-height: 22px;
+    margin: 0;
+  }
+}
