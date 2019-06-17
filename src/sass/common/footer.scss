@@ -1,170 +1,265 @@
+.footer-wrapper {
+  background-color: $white;
+
+  .separator {
+    height: 24px;
+    background-color: #f3f7f7;
+  }
+}
+
 .footer-box {
   display: flex;
   justify-content: space-between;
-  padding: 84px 0 25px 0;
+  padding: 75px 0 85px 0;
 
-  & .footer-nav-box {
-    flex: 0 0 35%;
-    display: flex;
+  & .logo-footer {
+    flex: 0 0 150px;
 
-    & nav {
-      margin-right: 70px;
+    & a {
+      display: block;
 
-      &:last-child {
-        margin-right: 0;
+      & img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  & .footer-info-box {
+    flex: 0 0 55%;
+
+    & .footer-info {
+      margin-bottom: 20px;
+
+      & .title {
+        color: $title-color;
+        font-weight: $Bold;
+        text-transform: uppercase;
       }
 
-      & ul {
-        & .title {
-          color: $cadetblue-color;
-          font-size: 17px;
-          font-weight: $Medium;
-          margin-bottom: 17px;
+      & .text {
+        color: #aac0c3;
+        font-size: 12px;
+        font-weight: $Regular;
+        line-height: 20px;
+      }
+    }
+
+    & .contact-box {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+
+      & .phone-numbers {
+        margin-right: 33px;
+
+        & li {
+          display: flex;
+          align-items: center;
+          padding-left: 14px;
+
+          & .phone-icon {
+            display: flex;
+            align-items: center;
+            color: $blue-color;
+            font-size: 12px;
+            font-weight: $Bold;
+            line-height: 22px;
+
+            &::after {
+              display: block;
+              content: "";
+              width: 4px;
+              height: 4px;
+              border-radius: 50%;
+              background-color: $blue-color;
+              margin-left: 3px;
+            }
+          }
         }
 
-        & li a {
-          color: #c3c1c0;
-          font-size: 14px;
-          font-weight: 400;
-          line-height: 25px;
+        & .phone-number-main {
+          padding: 0;
+
+          & a {
+            display: flex;
+            align-items: center;
+
+            & .phone-icon strong {
+              font-weight: $Bold;
+              font-size: 20px;
+            }
+
+            & .number {
+              color: #1f1f1f;
+              font-weight: $Regular;
+              font-size: 20px;
+              letter-spacing: 1.34px;
+              line-height: 22px;
+              margin-left: 5px;
+            }
+          }
 
           &:hover {
-            color: $title-color;
+            & a .number {
+              color: $hover-color;
+            }
           }
         }
       }
-    }
-  }
 
-  & .footer-logo-box {
-    flex: 0 0 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+      & .location {
+        display: flex;
+        align-items: center;
+        margin-right: 55px;
 
-    & .social {
-      margin-bottom: 24px;
+        & .location-icon {
+          height: 30px;
 
-      & ul li {
-        & .fa {
           & svg {
-            fill: #bcdcc7;
+            display: block;
+            height: 100%;
+            width: 40px;
+            fill: $blue-color;
           }
         }
 
-        & .icon-facebook svg:hover {
-          fill: #3b5999;
-        }
+        & .location-info {
+          & a {
+            display: block;
+            color: $title-color;
+            font-size: 13px;
+            line-height: 18px;
+            transition: 0s;
 
-        & .icon-instagram svg:hover {
-          fill: #e4405f;
-        }
+            & span {
+              display: block;
+            }
 
-        & .icon-youtube svg:hover {
-          fill: #cd201f;
+            &:hover {
+              color: $hover-color;
+            }
+          }
         }
       }
     }
 
-    & .copyright {
-      display: block;
-      color: $white-text;
-      font-size: 14px;
-      font-weight: $Regular;
-      line-height: 16px;
-      position: absolute;
-      bottom: 60px;
-      text-align: center;
+    & .footer-nav {
+      flex: 0 0 100%;
+      display: flex;
+      align-items: center;
+      margin-top: 48px;
 
-      & a {
-        display: block;
-        color: $white-text;
-        font-size: 14px;
-        font-weight: $Regular;
-        line-height: 16px;
-        cursor: pointer;
+      & li {
+        margin-right: 30px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        & a {
+          color: $title-color;
+          font-size: 11px;
+          font-weight: $Bold;
+          line-height: 22px;
+          text-decoration: underline;
+
+          &:hover {
+            color: $hover-color;
+          }
+        }
       }
     }
   }
 
-  & .footer-options {
-    flex: 0 0 35%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  & .copyright-box {
+    flex: 0 0 25%;
 
     & .title {
       display: block;
-      color: $cadetblue-color;
-      font-size: 17px;
-      font-weight: $Medium;
-      margin-bottom: 22px;
+      color: $title-color;
+      font-size: 12px;
+      font-weight: $Bold;
+      text-transform: uppercase;
+      margin-bottom: 10px;
     }
 
     & form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      position: relative;
+      margin-bottom: 37px;
 
-      input[type="text"] {
-        display: block;
+      & input {
         border: 0;
-        width: 263px;
-        height: 40px;
-        border-radius: 15px;
-        background-color: #f7f5f5;
-        color: #aaaaaa;
-        font-size: 14px;
-        font-weight: $Regular;
-        line-height: 25px;
-        text-align: center;
-        border: 2px solid #f7f5f5;
-        margin-bottom: 16px;
+        width: 100%;
+        height: 50px;
+        border-radius: 20px;
+        background-color: #f3f7f7;
+        border: 2px solid #f3f7f7;
+        padding: 0 80px 0 16px;
 
         &:focus {
           outline: none;
-          background-color: $white;
-          border: 2px solid $cadetblue-color;
-          color: $title-color;
+          border: 2px solid $hover-color;
+          background-color: #fff;
+        }
+
+        &::placeholder {
+          color: #aac0c3;
+          font-size: 14px;
+          font-weight: $Regular;
+          line-height: 20px;
         }
       }
 
       & .btn {
-        border-radius: 0;
-        background-color: rgba(0, 0, 0, 0);
-        color: $title-color;
-        font-size: 15px;
-        font-weight: $Medium;
-        line-height: 24px;
-        border-bottom: 1px dashed $title-color;
-        margin-bottom: 73px;
+        width: 78px;
+        height: 50px;
+        border-radius: 30px;
+        background-color: $blue-color;
+        position: absolute;
+        right: -5px;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & img {
+          display: block;
+          width: 34px;
+          height: 17px;
+        }
+
+        &:hover {
+          background-color: #87c4cc;
+        }
       }
     }
 
-    & nav {
-      margin-bottom: 20px;
+    & .payment-box {
+      margin-bottom: 52px;
 
       & ul {
         display: flex;
+        justify-content: space-between;
         align-items: center;
+      }
+    }
 
-        & li {
-          margin-right: 25px;
+    & .copyright {
+      color: #909090;
+      font-size: 12px;
+      font-weight: $Regular;
+      line-height: 18px;
 
-          &:last-child {
-            margin-right: 0;
-          }
+      & a {
+        color: #909090;
+        font-size: 12px;
+        font-weight: $Regular;
+        line-height: 18px;
 
-          & a {
-            color: #c3c1c0;
-            font-size: 14px;
-            font-weight: $Regular;
-            line-height: 25px;
-
-            &:hover {
-              color: $title-color;
-            }
-          }
+        &:hover {
+          color: $hover-color;
         }
       }
     }

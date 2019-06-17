@@ -1,0 +1,55 @@
+/*=== breadcrumb ===*/
+
+.breadcrumb {
+  margin: 0;
+  background-color: #f8f8f8;
+  padding: 0;
+  height: 46px;
+  align-items: center;
+
+  & .breadcrumb-item {
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    color: #909090;
+    font-size: 12px;
+    font-weight: $Regular;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    & a {
+      color: #909090;
+      font-size: 12px;
+      font-weight: $Regular;
+
+      &:hover {
+        color: $hover-color;
+      }
+    }
+
+    &::before {
+      display: inline-block;
+      content: "";
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: #aac0c3;
+      margin-right: 16px;
+      background-image: url("../img/breadcrumb-arrow.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &:first-child {
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "";
+}

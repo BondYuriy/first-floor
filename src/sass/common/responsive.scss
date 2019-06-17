@@ -244,3 +244,15 @@
 // }
 
 /* === footer === */
+
+/* === category page === */
+
+@media (min-width: 1200px) {
+  .category-box .category-main .category-list .product-card {
+    margin-right: 2%;
+
+    &:nth-child(3n + 3) {
+      margin-right: 0;
+    }
+  }
+}

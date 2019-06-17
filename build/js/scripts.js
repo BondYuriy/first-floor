@@ -44,6 +44,25 @@ $(".option-carousel").owlCarousel({
   }
 });
 
+$(".partners-carousel").owlCarousel({
+  loop: true,
+  margin: 30,
+  nav: true,
+  autoplay: true,
+  autoplayTimeout: 3000,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 3
+    },
+    1200: {
+      items: 5
+    }
+  }
+});
+
 //================================================
 
 $(".navbar-toggler").click(function() {
@@ -63,24 +82,3 @@ $(".btn-toggle-filter").click(function() {
 $(".select-toggle").click(function() {
   $(this).toggleClass("open");
 });
-
-//========================================================
-
-("use strict");
-
-var btnSub = document.querySelector(".btn-sub");
-var btnAdd = document.querySelector(".btn-add");
-var valueResult = document.querySelector(".value");
-
-var addCounter = function addCounter() {
-  valueResult.textContent = Number(valueResult.textContent) + 1;
-};
-
-var subCounter = function subCounter() {
-  if (Number(valueResult.textContent) > 0) {
-    valueResult.textContent = Number(valueResult.textContent) - 1;
-  }
-};
-
-btnAdd.addEventListener("click", addCounter);
-btnSub.addEventListener("click", subCounter);

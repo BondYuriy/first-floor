@@ -1,0 +1,60 @@
+/*=== pagination ===*/
+
+.pagination-box {
+  & .pagination {
+    & .page-item {
+      margin-right: 20px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      & .page-link {
+        border: 0;
+        padding: 0;
+        // outline: none;
+        box-shadow: none;
+        width: 37px;
+        height: 37px;
+        border-radius: 50%;
+        background-color: rgba(132, 172, 178, 0.34);
+        color: $white-text;
+        font-size: 13px;
+        font-weight: $Bold;
+        line-height: 37px;
+        text-align: center;
+
+        &:hover {
+          background-color: $hover-color;
+          color: $title-color;
+        }
+      }
+
+      & .active {
+        background-color: $blue-color;
+        color: $white-text;
+
+        &:hover {
+          background-color: $blue-color;
+          color: $white-text;
+        }
+      }
+
+      & .page-prev,
+      .page-next {
+        width: 37px;
+        height: 37px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #abc0c3;
+        background-color: rgba(132, 172, 178, 0);
+
+        &:hover {
+          background-color: rgba(132, 172, 178, 0);
+        }
+      }
+    }
+  }
+}
