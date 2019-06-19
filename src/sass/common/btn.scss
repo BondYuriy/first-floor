@@ -44,6 +44,22 @@
   }
 }
 
+.btn-blue-big {
+  height: 46px;
+  border-radius: 30px;
+  background-color: rgba(170, 192, 195, 0.45);
+  color: #8aa0a3;
+  font-size: 13px;
+  font-weight: $Medium;
+  line-height: 46px;
+  padding: 0 45px;
+
+  &:hover {
+    opacity: 0.8;
+    color: #8aa0a3;
+  }
+}
+
 .btn-blue-small {
   padding: 0 10px;
   height: 26px;
@@ -99,6 +115,18 @@
   font-weight: $Bold;
   line-height: 20px;
   padding: 0 10px;
+  text-transform: uppercase;
+}
+
+.stickers-big {
+  display: inline-block;
+  height: 34px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 15px;
+  font-size: 13px;
+  font-weight: $Bold;
+  line-height: 34px;
+  padding: 0 27px;
   text-transform: uppercase;
 }
 

@@ -63,6 +63,20 @@ $(".partners-carousel").owlCarousel({
   }
 });
 
+$(".product-img-carousel").owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  responsive: {
+    0: {
+      items: 1
+    },
+    1200: {
+      items: 3
+    }
+  }
+});
+
 //================================================
 
 $(".navbar-toggler").click(function() {
