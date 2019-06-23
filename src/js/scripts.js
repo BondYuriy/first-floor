@@ -35,7 +35,10 @@ $(".option-carousel").owlCarousel({
     0: {
       items: 1
     },
-    600: {
+    576: {
+      items: 2
+    },
+    768: {
       items: 3
     },
     1200: {
@@ -54,8 +57,8 @@ $(".partners-carousel").owlCarousel({
     0: {
       items: 1
     },
-    600: {
-      items: 3
+    576: {
+      items: 4
     },
     1200: {
       items: 5
@@ -69,9 +72,9 @@ $(".product-img-carousel").owlCarousel({
   nav: true,
   responsive: {
     0: {
-      items: 1
+      items: 2
     },
-    1200: {
+    992: {
       items: 3
     }
   }

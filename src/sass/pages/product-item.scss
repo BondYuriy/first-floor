@@ -3,6 +3,7 @@
 .product-item-box {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 
   & .product-img-box {
     flex: 0 0 40%;

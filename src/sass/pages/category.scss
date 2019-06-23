@@ -2,21 +2,6 @@
 
 .category-wrapper {
   background-color: #f8f8f8;
-
-  & .header-main-wrapper {
-    margin-bottom: 0;
-  }
-
-  & .navigations-wrapper {
-    height: 36px;
-    background-color: #fff;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-    background-color: #f8f8f8;
-
-    & .navigations {
-      display: none;
-    }
-  }
 }
 
 .category-box {
