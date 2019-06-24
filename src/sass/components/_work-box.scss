@@ -4,6 +4,7 @@
   padding: 500px 0 43px 0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   & .work-info {
     color: $white-text;
