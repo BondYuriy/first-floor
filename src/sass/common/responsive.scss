@@ -338,6 +338,17 @@
         & .phone-numbers {
           margin: 0;
           margin-bottom: 20px;
+
+          & .phone-number-sub a {
+            & .number {
+              display: inline-block;
+            }
+
+            & .phone-icon {
+              font-weight: $Bold;
+              font-size: 20px;
+            }
+          }
         }
 
         & .location {
@@ -729,6 +740,18 @@
     & .category-main {
       flex: 0 0 100%;
       margin-bottom: 30px;
+
+      & .title {
+        text-align: center;
+      }
+
+      & .category-user-options {
+        flex-direction: column-reverse;
+
+        & .view {
+          margin-bottom: 20px;
+        }
+      }
 
       & .pagination-box {
         position: relative;

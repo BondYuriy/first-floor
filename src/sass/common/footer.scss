@@ -79,7 +79,8 @@
           }
         }
 
-        & .phone-number-main {
+        & .phone-number-main,
+        .phone-number-sub {
           padding: 0;
 
           & a {
@@ -105,6 +106,12 @@
             & a .number {
               color: $hover-color;
             }
+          }
+        }
+
+        & .phone-number-sub {
+          & a .number {
+            display: none;
           }
         }
       }

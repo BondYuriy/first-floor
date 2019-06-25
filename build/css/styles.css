@@ -8419,21 +8419,25 @@ a:hover {
 	margin-left: 3px;
 }
 
-.footer-box .footer-info-box .contact-box .phone-numbers .phone-number-main {
+.footer-box .footer-info-box .contact-box .phone-numbers .phone-number-main,
+.footer-box .footer-info-box .contact-box .phone-numbers .phone-number-sub {
 	padding: 0;
 }
 
-.footer-box .footer-info-box .contact-box .phone-numbers .phone-number-main a {
+.footer-box .footer-info-box .contact-box .phone-numbers .phone-number-main a,
+.footer-box .footer-info-box .contact-box .phone-numbers .phone-number-sub a {
 	display: flex;
 	align-items: center;
 }
 
-.footer-box .footer-info-box .contact-box .phone-numbers .phone-number-main a .phone-icon strong {
+.footer-box .footer-info-box .contact-box .phone-numbers .phone-number-main a .phone-icon strong,
+.footer-box .footer-info-box .contact-box .phone-numbers .phone-number-sub a .phone-icon strong {
 	font-weight: 700;
 	font-size: 20px;
 }
 
-.footer-box .footer-info-box .contact-box .phone-numbers .phone-number-main a .number {
+.footer-box .footer-info-box .contact-box .phone-numbers .phone-number-main a .number,
+.footer-box .footer-info-box .contact-box .phone-numbers .phone-number-sub a .number {
 	color: #1f1f1f;
 	font-weight: 400;
 	font-size: 20px;
@@ -8442,8 +8446,13 @@ a:hover {
 	margin-left: 5px;
 }
 
-.footer-box .footer-info-box .contact-box .phone-numbers .phone-number-main:hover a .number {
+.footer-box .footer-info-box .contact-box .phone-numbers .phone-number-main:hover a .number,
+.footer-box .footer-info-box .contact-box .phone-numbers .phone-number-sub:hover a .number {
 	color: #ffc400;
+}
+
+.footer-box .footer-info-box .contact-box .phone-numbers .phone-number-sub a .number {
+	display: none;
 }
 
 .footer-box .footer-info-box .contact-box .location {
@@ -12959,6 +12968,15 @@ a:hover {
 	margin-bottom: 20px;
 }
 
+.footer-box .footer-info-box .contact-box .phone-numbers .phone-number-sub a .number {
+	display: inline-block;
+}
+
+.footer-box .footer-info-box .contact-box .phone-numbers .phone-number-sub a .phone-icon {
+	font-weight: 700;
+	font-size: 20px;
+}
+
 .footer-box .footer-info-box .contact-box .location {
 	margin-right: 0;
 }
@@ -13091,6 +13109,18 @@ a:hover {
 .category-box .category-main {
 	flex: 0 0 100%;
 	margin-bottom: 30px;
+}
+
+.category-box .category-main .title {
+	text-align: center;
+}
+
+.category-box .category-main .category-user-options {
+	flex-direction: column-reverse;
+}
+
+.category-box .category-main .category-user-options .view {
+	margin-bottom: 20px;
 }
 
 .category-box .category-main .pagination-box {
