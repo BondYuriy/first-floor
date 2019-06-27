@@ -8192,12 +8192,17 @@ a:hover {
 }
 
 .header-main-wrapper .header-main .user-options .basket .img-box .number-goods {
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background-color: #fadb57;
 	color: #1f1f1f;
 	font-size: 11px;
 	font-weight: 700;
-	line-height: 22px;
+	line-height: 16px;
+	text-align: center;
 	position: absolute;
-	right: 1px;
+	right: -5px;
 	top: 3px;
 }
 
@@ -8350,7 +8355,7 @@ a:hover {
 }
 
 .footer-box .logo-footer {
-	flex: 0 0 150px;
+	flex: 0 0 112px;
 }
 
 .footer-box .logo-footer a {
